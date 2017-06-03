@@ -1556,7 +1556,7 @@ func (fbo *folderBranchOps) SetInitialHeadFromServer(
 				return err
 			}
 
-			rev := kbfsmd.RevisionUninitialized
+			rev := kbfsmd.RevisionInitial
 			if mergedMD != (ImmutableRootMetadata{}) {
 				rev = mergedMD.Revision()
 			}
